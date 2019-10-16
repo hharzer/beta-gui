@@ -7,7 +7,8 @@ import { NavigationList, NavigationListItem } from "@kiwicom/orbit-components/";
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import './AppBar.css'
-import FileReaderAction from "../components/FileReaderComponent";
+import FileReaderComponent from "../components/FileReaderComponent";
+import {HtmlToJson} from '../utils/LoadTable'
 const AppBar = (props) => {
   const [navs, setNavs] = useState(
     [ <ButtonLink type="secondary" transparent>English</ButtonLink>,
@@ -19,8 +20,10 @@ const AppBar = (props) => {
     setNavs([...navs, NewBtn])
   }
 
-  const onFileLoad = data => {
-      console.log(data)
+  const onFileLoad = (data,res) => {
+      console.log(data,res)
+      const jsonData = HtmlToJson(data)
+      console.log(jsonData)
   }
 
   return (
@@ -37,7 +40,7 @@ const AppBar = (props) => {
         </NavigationList>
       </div>
       <div className="AppActions" >
-          <FileReaderAction FileDidLoad={onFileLoad}/>
+          <FileReaderComponent FileDidLoad={onFileLoad}/>
       </div>
     </div>
   );

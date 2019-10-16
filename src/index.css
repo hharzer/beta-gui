@@ -1,22 +1,30 @@
 html,
 body,
-#root,
-.grid-container {
-  height: 100%;
+#root {
   margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
 }
-
+.grid-container{   height:calc(100% - 10px);
+    padding:10px;
+  display: flex;
+box-sizing: border-box}
 
 
 .grid-container {
   display: grid;
+
   grid-template-columns: 1fr;
   grid-template-rows: 48px 12fr 32px;
   grid-template-areas: "AppBar" "AppContent" "AppFooter";
+  box-sizing: content-box;
+  overflow: hidden;
 }
 
 .AppBar {
   display: grid;
+  gap: 8px;
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "AppBrand AppNav AppActions";
