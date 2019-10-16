@@ -1,0 +1,83 @@
+html,
+body,
+#root,
+.grid-container {
+  height: 100%;
+  margin: 0;
+}
+
+[class^="App"] {
+  border: 1px dotted lightgrey;
+  position: relative;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 12fr 1fr;
+  grid-template-areas: "AppBar" "AppContent" "AppStatus";
+}
+
+.AppBar {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "AppBrand AppNav AppActins";
+  grid-area: AppBar;
+}
+
+.AppBrand {
+  grid-area: AppBrand;
+}
+
+.AppNav {
+  grid-area: AppNav;
+  display: flex;
+  padding: 0 10px 0;
+  align-content: center;
+  justify-content: center;
+}
+
+.AppActins {
+  grid-area: AppActins;
+}
+
+.AppStatus {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "AppStatus AppInfo AppExtra";
+  grid-area: AppStatus;
+}
+
+.AppStatus {
+  grid-area: AppStatus;
+}
+
+.AppInfo {
+  grid-area: AppInfo;
+}
+
+.AppExtra {
+  grid-area: AppExtra;
+}
+
+.AppContent {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "AppLeftContent AppCenterContent AppRightContent";
+  grid-area: AppContent;
+}
+
+.AppLeftContent {
+  grid-area: AppLeftContent;
+}
+
+.AppCenterContent {
+  grid-area: AppCenterContent;
+}
+
+.AppRightContent {
+  grid-area: AppRightContent;
+}
