@@ -5,13 +5,16 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@babel/core": "^7.6.4",
     "@kiwicom/orbit-components": "0.64.0",
+    "babel-loader": "^8.0.6",
     "lodash": "4.17.15",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-file-reader": "1.1.4",
     "react-redux": "7.1.1",
     "react-router-dom": "5.1.2",
+    "react-scripts": "^3.2.0",
     "redux": "4.0.4",
     "styled-components": "4.2.0"
   },

@@ -11,10 +11,15 @@ body,
   position: relative;
 }
 
+.AppNav ul {
+  margin: auto;
+  justify-content: center;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 12fr 1fr;
+  grid-template-rows: 48px 12fr 1fr;
   grid-template-areas: "AppBar" "AppContent" "AppStatus";
 }
 

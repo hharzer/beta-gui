@@ -2,6 +2,10 @@ import ReactDOM from "react-dom";
 import React from "react";
 import App from "./App";
 import "./index.css";
+import {ElementApp} from './store/index';
+import {Provider} from 'react-redux';
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+
+
+ReactDOM.render(<Provider store={ElementApp}><App/></Provider>
+, document.getElementById("root"));
