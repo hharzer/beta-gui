@@ -8,24 +8,34 @@
     "@babel/core": "^7.6.4",
     "@kiwicom/orbit-components": "0.64.0",
     "babel-loader": "^8.0.6",
-    "lodash": "4.17.15",
+    "cheerio": "^1.0.0-rc.3",
+    "lodash": "^4.17.15",
+    "prop-types": "^15.7.2",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-file-reader": "1.1.4",
     "react-redux": "7.1.1",
     "react-router-dom": "5.1.2",
     "react-scripts": "^3.2.0",
+    "react-split": "^2.0.7",
     "redux": "4.0.4",
-    "styled-components": "4.2.0"
+    "styled-components": "4.2.0",
+    "table2json": "^0.2.2"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^5.2.4",
+    "@storybook/addon-links": "^5.2.4",
+    "@storybook/addons": "^5.2.4",
+    "@storybook/react": "^5.2.4",
     "typescript": "3.3.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "browserslist": [
     ">0.2%",

@@ -1,0 +1,45 @@
+
+.AppNav ul {
+
+
+  align-content: stretch;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.AppNav li {
+  display: flex;
+}
+
+.AppNav ul * {
+  align-content: stretch;
+  justify-content:stretch;
+  padding: 0;
+}
+
+.AppBrand {
+  grid-area: AppBrand;
+  display: flex;
+  margin: auto;
+  align-content: stretch;
+  justify-content:center;
+}
+
+.AppNav {
+  grid-area: AppNav;
+  display: flex;
+  padding: 0 10px 0;
+/*   align-content: space-between;
+  justify-content: center; */
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.AppActions {
+  grid-area: AppActions;
+}
+.AppActions div {
+  width:100%;
+}

@@ -1,0 +1,15 @@
+
+  
+
+  .AppStatus {
+    grid-area: AppStatus;
+  }
+  
+  .AppInfo {
+    grid-area: AppInfo;
+  }
+  
+  .AppExtra {
+    grid-area: AppExtra;
+  }
+  

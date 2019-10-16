@@ -6,83 +6,45 @@ body,
   margin: 0;
 }
 
-[class^="App"] {
-  border: 1px dotted lightgrey;
-  position: relative;
-}
 
-.AppNav ul {
-  margin: auto;
-  justify-content: center;
-}
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 48px 12fr 1fr;
-  grid-template-areas: "AppBar" "AppContent" "AppStatus";
+  grid-template-rows: 48px 12fr 32px;
+  grid-template-areas: "AppBar" "AppContent" "AppFooter";
 }
 
 .AppBar {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "AppBrand AppNav AppActins";
+  grid-template-areas: "AppBrand AppNav AppActions";
   grid-area: AppBar;
 }
 
-.AppBrand {
-  grid-area: AppBrand;
-}
 
-.AppNav {
-  grid-area: AppNav;
-  display: flex;
-  padding: 0 10px 0;
-  align-content: center;
-  justify-content: center;
-}
 
-.AppActins {
-  grid-area: AppActins;
-}
-
-.AppStatus {
+.AppFooter {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "AppStatus AppInfo AppExtra";
-  grid-area: AppStatus;
+  grid-area: AppFooter;
+  border-top: 1px solid black;
 }
 
-.AppStatus {
-  grid-area: AppStatus;
-}
 
-.AppInfo {
-  grid-area: AppInfo;
-}
-
-.AppExtra {
-  grid-area: AppExtra;
-}
 
 .AppContent {
-  display: grid;
+  /*display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "AppLeftContent AppCenterContent AppRightContent";
-  grid-area: AppContent;
+  */grid-area: AppContent;
+  display: flex;
+  flex-direction: row;
+  margin:10px;
 }
 
-.AppLeftContent {
-  grid-area: AppLeftContent;
-}
 
-.AppCenterContent {
-  grid-area: AppCenterContent;
-}
-
-.AppRightContent {
-  grid-area: AppRightContent;
-}

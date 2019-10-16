@@ -1,0 +1,13 @@
+
+
+.AppLeftContent {
+  grid-area: AppLeftContent;
+}
+
+.AppCenterContent {
+  grid-area: AppCenterContent;
+}
+
+.AppRightContent {
+  grid-area: AppRightContent;
+}
